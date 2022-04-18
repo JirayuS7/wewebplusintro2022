@@ -1,0 +1,85 @@
+body {font-family: 'Kanit', sans-serif;}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #187BC1;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #187BC1;
+  }
+
+.carousel-indicators [data-bs-target] { width:17px; height: 17px; border-radius: 50%; opacity: 1;
+    padding: 0;
+    margin: 10px;
+    padding: 0 0;
+    box-shadow: 0px 2px 4px #00000029;
+    border: 0 !important;
+    
+}
+
+ 
+
+#main_slider { position: relative; padding-bottom: 107px;}
+.carousel-indicators .active { background-color: #187BC1;}
+
+
+#main_bottom { position: fixed; bottom: 0; left: 0; width: 100%;}
+#main_bottom { background: url(../images/bt_background.jpg) no-repeat top left #fff; padding: 10px 0; z-index: 2;}
+#main_bottom img { max-width: 100%;}
+#bt_text_bottom  h4{ font-size: 20px; color: #187BC1; margin-bottom: 0; }
+#bt_text_bottom p {font-size:18px; color:#888888; font-weight: lighter;}
+#main_bottom a.btn { background-color: #187BC1; float: right; border-radius: 0; border: 0; width: 220px; font-size: 20px; height: 60px; line-height: 60px; padding: 0 5px;    box-shadow: 0px 2px 4px #00000029; }
+#main_bottom a.btn:hover { background: #004AC9;}
+
+ 
+
+
+/* responsive */
+ 
+
+@media only screen and (max-width:1680px) {
+
+    #main_slider { padding-bottom: 0;}
+    #main_bottom { position: relative !important;}
+}
+
+@media only screen and (max-width:1480px) {
+   
+    #main_bottom { background: url(../images/bt_background.jpg) no-repeat  -220px 0px #fff;}
+   
+    
+  }
+
+
+
+  @media only screen and (max-width:1024px) {
+    #main_bottom a.btn { width: auto; padding: 0 15px;}
+    #bt_text_bottom h4 { font-size: 16px;}
+    #main_bottom a.btn {font-size: 16px; line-height: 40px; height: 40px;}
+    #bt_text_bottom p {font-size: 14px;}
+   
+  }
+
+
+
+  @media only screen and (max-width:767px) {
+
+    .carousel-indicators [data-bs-target] {width: 10px; height: 10px;}
+    #main_bottom { text-align: center;}
+    #main_bottom a.btn {float: none;}
+    #main_bottom {     background: url(../images/bt_background.jpg) no-repeat  -260px 0px #fff;}
+    
+  }
